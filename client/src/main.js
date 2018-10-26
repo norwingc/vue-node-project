@@ -4,17 +4,22 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
+import {sync} from 'vuex-router-sync'
+import store from '@/store/store'
 import 'vuetify/dist/vuetify.min.css'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 Vue.config.productionTip = false
+
 Vue.use(Vuetify, {
 	iconfont: 'mdi'
 })
-/* eslint-disable no-new */
+
+sync(store, router)
+
 new Vue({
 	el: '#app',
+    render: h => h(App),
 	router,
-	components: { App },
-	template: '<App/>'
+	store
 })
