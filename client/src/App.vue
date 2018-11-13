@@ -31,8 +31,4 @@ export default {
 	color: #2c3e50;
 	margin-top: 60px;
 }
-.error--text{
-	color: #ff5252 !important;
-    caret-color: #ff5252 !important;
-}
 </style>
