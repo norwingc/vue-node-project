@@ -1,7 +1,7 @@
 module.exports = {
 	port: process.env.PORT || 8082,
 	db: {
-		database: process.env.DB_NAME || 'tabtracker',
+		database: process.env.DB_NAME || 'test',
 		user: process.env.DB_USER || 'root',
 		password: process.env.DB_PASS || '',
 		options: {
